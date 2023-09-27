@@ -1,0 +1,98 @@
+html{
+        height: 100vh;
+        background-color: rgb(1, 1, 21);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+
+      h1{
+        color: rgb(103, 250, 245);
+      }
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: inherit;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 2px 1px 15px  lightblue;
+}
+
+.input{
+    display: flex; 
+    justify-content: space-between;
+    align-items:end;
+    height: 50px;
+    width: 75%;
+    
+}
+
+.input > input{
+   border: none;
+   border-bottom: 1px solid white;
+   outline: none;
+   width: 100%;
+    background-color: inherit;
+    height: 30px;
+    padding: 0px 10px;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    color: white;
+     font-size: 20px;
+}
+
+input:focus{
+    border-bottom: 2px solid lightblue;
+}
+
+.list_container{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+ 
+
+.list_item{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 75%;
+    height: 40px;
+    color:black
+}
+
+.item > input{
+  margin-right: 10px;
+}
+ 
+
+.list_operator{
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+}
+
+@media (max-width:700px)  {
+
+    body{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .box{
+        width: 90%;
+    }
+}
